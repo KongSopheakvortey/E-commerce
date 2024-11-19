@@ -1,14 +1,12 @@
 <template>
     <div class="container">
-        <button type="button" 
-        :style="{backgroundColor: color}"
-        class="btn"
+        <button type="button" :style="{backgroundColor: color}" class="btn"
         >
             <div class="wrapper">
-                <span class="text">{{ text }}</span>
+                <span class="text">{{ title }}</span>
                 <Button @click="shopNow(promotion)"></Button>
             </div>
-            <img :src="picture" alt="item picture" class="item-picture" />
+            <img :src="image" alt="item picture" class="item-picture" />
         </button>
     </div>
 </template>
@@ -21,10 +19,20 @@
             Button,
         },
 
+        data(){
+            return{
+                promotion: {
+                    title: this.title
+                }
+            }
+        },
+
         props: {
         color: String,
-        text: String,
-        picture: String,
+        title: String,
+        image: String,
+        buttonColor: String,
+        url: String,
         },
 
         methods:{
