@@ -20,10 +20,6 @@
         name: String,
         productCount: Number,
         image: String
-        // image: {
-        //     type: String,
-        //     required: true,
-        // },
         },
     };
 </script>

@@ -1,7 +1,7 @@
 <template>
     <div class="ProductContainer" > 
         <div class="box">{{ promotionAsPercentage }}</div>
-        <img :src="image" alt="item picture" width="100px" style="display: flex; align-self: center;" />
+        <img :src="image" alt="item picture"  style="display: flex;width:100%; height:100px; align-self: center; object-fit: cover;" />
         <div class="productDetails">
             <span style="font-size: 7px; color: #B6B6B6">Hodo Foods</span>
             <span style="font-size: 9px; font-weight: bold; color: #253D4E;">{{ name }}</span>
