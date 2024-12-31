@@ -6,7 +6,6 @@
 
 <script>
 export default {
-
   computed: {
     nb() {
       return this.$route.params.nb;
@@ -21,7 +20,7 @@ export default {
 <style>
 .sectionContent{
     border-top: 3px dashed black;
-    padding: 10px;
+    padding: 10px 20px;
     margin-top: 10px;
     display: flex;
     justify-content: center;
